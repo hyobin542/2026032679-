@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🌤 Weather Dashboard</h1>
+    <p class="subtitle">도시를 검색하여 실시간 날씨를 확인해보세요</p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="예: Seoul, Busan, Tokyo"
+      >
+      <button id="searchBtn">검색</button>
+    </div>
+
+    <div class="weather-card">
+
+      <h2 id="cityName">Seoul</h2>
+
+      <div class="weather-icon" id="weatherIcon">
+        ☀️
+      </div>
+
+      <div class="temperature">
+        <span id="temp">--</span>°C
+      </div>
+
+      <p id="description">날씨 정보</p>
+
+      <div class="details">
+
+        <div class="detail-box">
+          <h3>체감온도</h3>
+          <p id="feelsLike">--°C</p>
+        </div>
+
+        <div class="detail-box">
+          <h3>습도</h3>
+          <p id="humidity">--%</p>
+        </div>
+
+        <div class="detail-box">
+          <h3>풍속</h3>
+          <p id="wind">-- m/s</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
